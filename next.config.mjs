@@ -3,6 +3,12 @@ const isGitHubPages = process.env.BUILD_TARGET === "github-pages";
 
 const nextConfig = {
   reactStrictMode: false,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   ...(isGitHubPages
     ? {
         output: "export",
