@@ -15,9 +15,9 @@ describe("Role-Based Access Control (RBAC) Permissions Tests", () => {
   const adminUser: TokenPayload = {
     userId: "usr_admin",
     username: "admin",
-    name: "Admin User",
-    email: "admin@vtc.ac.th",
-    department: "งานศูนย์ข้อมูลสารสนเทศ",
+    name: "ผู้ดูแลระบบ",
+    email: "admin@thaluang.ac.th",
+    department: "งานศูนย์ดิจิทัลและสื่อสารองค์กร",
     role: "Admin",
   };
 
@@ -25,8 +25,8 @@ describe("Role-Based Access Control (RBAC) Permissions Tests", () => {
     userId: "usr_chatree",
     username: "chatree",
     name: "นายชาตรี เริงชัยภูมิ",
-    email: "chatree@vtc.ac.th",
-    department: "ฝ่ายบริหาร",
+    email: "chatree@thaluang.ac.th",
+    department: "ฝ่ายพัฒนายุทธศาสตร์และแผนงาน",
     role: "Approver",
   };
 
@@ -34,8 +34,8 @@ describe("Role-Based Access Control (RBAC) Permissions Tests", () => {
     userId: "usr_watcharapong",
     username: "watcharapong",
     name: "นายวัชรพงศ์ โสภา",
-    email: "watcharapong@vtc.ac.th",
-    department: "งานอาคารสถานที่",
+    email: "watcharapong@thaluang.ac.th",
+    department: "งานศูนย์ดิจิทัลและสื่อสารองค์กร",
     role: "Inspector",
   };
 
@@ -43,8 +43,8 @@ describe("Role-Based Access Control (RBAC) Permissions Tests", () => {
     userId: "usr_ekarat",
     username: "ekarat",
     name: "นายเอกราช เขียวทอง",
-    email: "ekarat@vtc.ac.th",
-    department: "ฝ่ายบริหารทรัพยากร",
+    email: "ekarat@thaluang.ac.th",
+    department: "งานศูนย์ดิจิทัลและสื่อสารองค์กร",
     role: "Endorser",
   };
 
