@@ -131,7 +131,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
   };
 
   const handlePrint = () => {
-    window.open(`/bookings/${bookingId}/print`, "_blank");
+    window.open(`/bookings/print?id=${bookingId}`, "_blank");
   };
 
   if (loading || !booking) {

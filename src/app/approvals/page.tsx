@@ -502,7 +502,7 @@ export default function ApprovalsPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <button
-                      onClick={() => window.open(`/bookings/${b.bookingId}/print`, "_blank")}
+                      onClick={() => window.open(`/bookings/print?id=${b.bookingId}`, "_blank")}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200 transition-colors"
                     >
                       <Printer className="w-3.5 h-3.5 text-blue-600" />

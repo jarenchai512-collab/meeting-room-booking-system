@@ -285,7 +285,7 @@ export default function BookingsListPage() {
                     <td className="py-4 px-6 text-right whitespace-nowrap space-x-1">
                       {/* Print A4 button */}
                       <button
-                        onClick={() => window.open(`/bookings/${b.bookingId}/print`, "_blank")}
+                        onClick={() => window.open(`/bookings/print?id=${b.bookingId}`, "_blank")}
                         className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100 rounded-lg transition-colors border border-slate-200"
                         title="พิมพ์แบบคำขอ (A4)"
                       >
